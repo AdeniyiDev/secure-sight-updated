@@ -1,0 +1,193 @@
+/* =====================================================================
+   home.css  -  the sections under the home page slider
+   ===================================================================== */
+.hm-sec{padding:clamp(64px,8vw,104px) 0}
+.hm-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:clamp(24px,3vw,40px)}
+.hm-head h2,.spot h2,.why-lead h2{font-size:clamp(30px,3.6vw,44px);font-weight:400;letter-spacing:-.02em;line-height:1.1;margin:0}
+.hm-link{font-size:15px;color:var(--navy);text-underline-offset:4px;white-space:nowrap}
+.hm-link:hover{color:var(--red)}
+
+/* ---------- shop by category ---------- */
+.cats{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}
+.cat{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:20px;overflow:hidden;border-radius:14px;padding:28px 30px;min-height:290px;text-decoration:none;color:var(--navy);background:#e9edf0}
+.cat.t2{background:#f1efe9}
+.cat.t3{background:#d4dce2}
+.cat.dk{background:var(--navy);color:#fff}
+.cat-xl{grid-column:span 7;min-height:400px}
+.cat-l{grid-column:span 5;min-height:400px}
+.cat-m{grid-column:span 4;min-height:320px}
+.cat-wide{grid-column:span 12;min-height:240px}
+.cat-copy{position:relative;z-index:1}
+.cat h3{font-size:clamp(22px,2.2vw,28px);font-weight:500;letter-spacing:-.015em;margin:0 0 8px}
+.cat p{font-size:15px;line-height:1.5;margin:0;opacity:.75;max-width:30ch}
+.cat-count{position:relative;z-index:1;font-size:14px;text-decoration:underline;text-underline-offset:4px}
+.cat:hover .cat-count{text-decoration-thickness:2px}
+.cat-art{position:absolute;right:0;bottom:0;width:auto;object-fit:contain;object-position:right bottom;pointer-events:none}
+.cat-m .cat-art{height:54%;max-width:68%}
+.cat-xl .cat-art{height:88%;max-width:58%}
+.cat-l .cat-art{height:70%;max-width:78%}
+.cat-wide .cat-art{height:92%;max-width:46%}
+.cat-xl .cat-copy,.cat-l .cat-copy{max-width:46%}
+/* real product photos: white plates on the navy tile, blended into the light tiles */
+.cat-photos{position:absolute;right:24px;bottom:24px;display:flex;align-items:flex-end;gap:14px;pointer-events:none}
+.cat-photos img{display:block;width:auto;max-width:none}
+.cat-xl .cat-photos img{height:200px;background:#fff;padding:8px;border-radius:12px}
+.cat-l .cat-photos{right:14px;bottom:14px}
+.cat-l .cat-photos img{height:268px;mix-blend-mode:multiply}
+.cat-photos img.cut{mix-blend-mode:normal}
+.cat-m .cat-photos{right:22px;bottom:22px}
+.cat-m .cat-photos img{height:140px;max-width:100%;mix-blend-mode:multiply}
+.cat-m .cat-photos img.cut{mix-blend-mode:normal}
+.cat-wide .cat-photos{right:40px;bottom:14px}
+.cat-wide .cat-photos img{height:196px;mix-blend-mode:multiply}
+.cat-wide .cat-photos img.cut{mix-blend-mode:normal}
+.cat-wide .cat-copy{max-width:50%}
+
+/* ---------- why us ---------- */
+.why-sec{background:#f6f6f3}
+.why{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(32px,6vw,96px);align-items:start}
+.why-lead p{font-size:18px;line-height:1.6;color:#46535b;max-width:36ch;margin:20px 0 0}
+.why-list{list-style:none;margin:0;padding:0}
+.why-list li{padding:24px 0;border-top:1px solid #d3d9dd}
+.why-list li:last-child{border-bottom:1px solid #d3d9dd}
+.why-list h3{font-size:21px;font-weight:500;letter-spacing:-.01em;margin:0 0 8px}
+.why-list p{font-size:16px;line-height:1.6;color:#4a5961;margin:0;max-width:46ch}
+
+/* ---------- spotlight bands ---------- */
+.spot{padding:clamp(56px,7vw,96px) 0;background:#eceff1}
+.spot.warm{background:#f1efe9}
+.spot.dk{background:var(--navy);color:#fff}
+.spot-in{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(24px,5vw,72px);align-items:center}
+.spot.flip .spot-in{grid-template-columns:1.1fr 1fr}
+.spot.flip .spot-copy{order:2}
+.spot h2{margin-bottom:16px}
+.spot p{font-size:18px;line-height:1.6;max-width:44ch;margin:0 0 28px;opacity:.82}
+.spot img{display:block;width:100%;height:auto;max-height:500px;object-fit:contain}
+
+/* ---------- how it works ---------- */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,4vw,56px)}
+.step{border-top:1px solid #c9d1d6;padding-top:22px}
+.step-n{display:block;font-size:56px;font-weight:300;letter-spacing:-.03em;color:#b4c0c8;line-height:1;margin-bottom:20px}
+.step h3{font-size:22px;font-weight:500;letter-spacing:-.01em;margin:0 0 10px}
+.step p{font-size:16px;line-height:1.6;color:#4a5961;margin:0;max-width:34ch}
+
+/* ---------- works with ---------- */
+.works{display:flex;flex-wrap:wrap;align-items:center;gap:14px 44px;padding:30px 0;border-top:1px solid #e1e5e8;border-bottom:1px solid #e1e5e8}
+.works span{font-size:15px;color:#7a8890}
+.works b{font-size:19px;font-weight:600;letter-spacing:-.01em;color:#5b6a73}
+
+/* ---------- popular picks ---------- */
+.picks.grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+
+/* ---------- recent installs (project gallery) ---------- */
+.gal-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-auto-rows:150px;gap:10px}
+.gal-tile{position:relative;display:block;border-radius:12px;overflow:hidden;background-size:cover;background-position:center;color:#fff;text-decoration:none}
+.gal-tile:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 55%);transition:background .15s}
+.gal-tile:hover:after{background:linear-gradient(0deg,rgba(0,0,0,.65) 0%,rgba(0,0,0,.05) 70%)}
+.gal-big{grid-row:span 2;grid-column:span 1}
+.gal-tag{position:relative;z-index:1;display:inline-block;margin:14px 0 0 14px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.16);padding:4px 9px;border-radius:5px}
+.gal-cap{position:absolute;left:14px;right:14px;bottom:14px;z-index:1;display:flex;flex-direction:column;gap:2px}
+.gal-cap b{font-size:14px;font-weight:500}
+.gal-cap i{font-style:normal;font-size:12.5px;opacity:.78}
+.gal-big .gal-cap b{font-size:17px}
+
+/* ---------- reviews (masonry) ---------- */
+.reviews-sec{background:#f6f6f3}
+.rv-mason{columns:3 200px;column-gap:14px}
+.rv-card{break-inside:avoid;background:#fff;border:1px solid #e3e3e3;border-radius:12px;padding:22px;margin-bottom:14px}
+.rv-card.dk{background:var(--navy);color:#fff;border-color:var(--navy)}
+.rv-card.rd{background:var(--red);color:#fff;border-color:var(--red)}
+.rv-stars{color:var(--red);font-size:13px;letter-spacing:.06em;line-height:1;margin-bottom:12px}
+.rv-card.dk .rv-stars{color:#e39a9a}
+.rv-card p{font-size:14.5px;line-height:1.6;margin:0 0 16px;color:inherit}
+.rv-name{font-size:14px;font-weight:500}
+.rv-meta{font-size:12.5px;color:#6b7781;margin-top:2px}
+.rv-card.dk .rv-meta{color:rgba(255,255,255,.55)}
+.rv-avg-n{font-size:30px;font-weight:300;line-height:1;margin-bottom:6px}
+.rv-avg-t{font-size:12.5px;opacity:.88;max-width:22ch}
+
+@media(max-width:860px){
+  .gal-grid{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
+  .gal-big{grid-row:span 2;grid-column:span 2}
+}
+@media(max-width:1000px){
+  .cat-xl,.cat-l{grid-column:span 6}
+  .cat-m{grid-column:span 6}
+  .cat-xl .cat-copy,.cat-l .cat-copy{max-width:100%}
+  .cat-xl .cat-art,.cat-l .cat-art{height:56%;max-width:70%}
+  .cat-xl .cat-photos img{height:150px}
+  .cat-l .cat-photos img{height:210px}
+  .picks.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:860px){
+  .spot-in,.spot.flip .spot-in,.why{grid-template-columns:1fr}
+  .spot.flip .spot-copy{order:0}
+  .steps{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  /* ----- less empty space, smaller headings ----- */
+  .hm-sec{padding:44px 0}
+  .hm-head{margin-bottom:18px}
+  .hm-head h2,.spot h2,.why-lead h2{font-size:28px}
+  .hm-link{min-height:44px;display:inline-flex;align-items:center}
+  .why-list li{padding:18px 0}
+  .why-list h3{font-size:19px}
+  .spot{padding:40px 0}
+  .spot-in{gap:22px}
+  .spot p{font-size:16px;margin-bottom:22px}
+
+  /* ----- shop by category: a compact 2-column grid (everything visible, nothing hidden behind a swipe) ----- */
+  .cats{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .cats .cat{grid-column:auto;min-height:0;padding:0;gap:0;justify-content:flex-start;border-radius:14px}
+  .cats .cat.cat-wide{grid-column:1/-1}
+  .cats .cat .cat-photos,.cats .cat .cat-art{order:-1;position:relative;right:auto;bottom:auto;width:100%;height:132px;max-width:none;max-height:none;display:flex;justify-content:center;align-items:center;padding:12px;gap:0;object-fit:contain}
+  .cats .cat .cat-art{width:auto;height:132px;max-width:70%;margin:0 auto;padding:12px 0}
+  .cats .cat .cat-photos img{width:auto;height:auto;max-width:100%;max-height:100%;background:none;padding:0;border-radius:0}
+  .cats .cat .cat-photos img:nth-child(n+2){display:none}
+  .cats .cat.dk .cat-photos img{background:#fff;padding:8px;border-radius:10px}
+  .cats .cat .cat-copy{padding:0 14px 8px;max-width:none}
+  .cats .cat h3{font-size:16px;line-height:1.25;margin:0 0 2px}
+  .cats .cat p{display:none}
+  .cats .cat .cat-count{margin-top:auto;padding:0 14px 14px;font-size:13px;text-decoration:none;opacity:.72}
+
+  /* ----- popular picks: 2 compact cards per row ----- */
+  .picks.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .picks .card{border-radius:14px}
+  .picks .card:hover{transform:none;box-shadow:none}
+  .picks .card .pic{height:132px}
+  .picks .card .pic svg{width:56px;height:56px}
+  .picks .card .cat-pill{top:8px;left:8px;font-size:11px;padding:3px 9px}
+  .picks .card .inst-badge{display:none}
+  .picks .card .sale-badge{left:8px;bottom:8px;font-size:11px;padding:3px 9px}
+  .picks .card .body{padding:12px}
+  .picks .card .card-brand{font-size:11px;margin-bottom:2px}
+  .picks .card h3{font-size:14px;line-height:1.3;margin-bottom:8px;min-height:2.6em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .picks .card .spec{display:none}
+  .picks .card .row{flex-direction:column;align-items:stretch;gap:10px;padding-top:10px}
+  .picks .card .price-main{font-size:17px}
+  .picks .card .price-main s{display:block;font-size:12px;margin-top:3px}
+  .picks .card .add{width:100%;min-height:44px;font-size:14px;padding:12px 8px}
+
+  /* ----- how it works: three compact rows ----- */
+  .steps{gap:0}
+  .step{display:grid;grid-template-columns:48px 1fr;column-gap:14px;padding:16px 0}
+  .step-n{font-size:34px;margin:0;grid-row:1/3}
+  .step h3{font-size:18px;margin:0 0 4px}
+  .step p{font-size:15px;max-width:none}
+
+  /* ----- recent installs: 2-up, shorter tiles ----- */
+  .gal-grid{grid-auto-rows:130px;gap:8px}
+  .gal-tag{margin:10px 0 0 10px;font-size:10px}
+  .gal-cap{left:10px;right:10px;bottom:10px}
+  .gal-cap b{font-size:13px}
+  .gal-big .gal-cap b{font-size:15px}
+
+  /* ----- reviews: single column ----- */
+  .rv-mason{columns:1}
+  .rv-card{padding:18px}
+
+  /* ----- works with: tidy chips ----- */
+  .works{gap:10px;padding:22px 0}
+  .works span{flex:0 0 100%;font-size:14px}
+  .works b{font-size:14px;font-weight:600;padding:8px 14px;border:1px solid #d9dee2;border-radius:99px;background:#fff}
+}
